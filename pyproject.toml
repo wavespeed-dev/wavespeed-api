@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wavespeed-api"
+version = "0.1.0"
+description = "Python client for WaveSpeed-class fast inference via a hosted API: FLUX schnell, Wan 2.2 and Seedance 2.5."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "wavespeed-dev"}]
+keywords = ["ai api", "flux-schnell", "seedance-2.5", "synexa", "wan2.2", "wavespeed", "wavespeed api", "wavespeed python"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/wavespeed-dev/wavespeed-api"
+Documentation = "https://wavespeed-dev.github.io/wavespeed-api/"
+"Hosted model" = "https://synexa.ai/explore/black-forest-labs/flux-schnell?utm_source=github&utm_medium=ugc&utm_campaign=wavespeed-dev&utm_content=pyproject&utm_term=tier-c"
+
+[tool.setuptools.packages.find]
+include = ["wavespeed_api*"]
